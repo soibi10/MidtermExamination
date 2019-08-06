@@ -1,0 +1,39 @@
+﻿<Window x:Class="MidtermExamination.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MidtermExamination"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="613.006" Width="806.214">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Quantity of Bananas:" FontSize="30" HorizontalAlignment="Left" Margin="170,44,0,0" VerticalAlignment="Top" Height="62" Width="285"/>
+        <Label Content="Quantity of Apples:" FontSize="30" HorizontalAlignment="Left" Margin="185,106,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.188,0.666"/>
+        <Label Content="Quantity of Oranges:" FontSize="30" HorizontalAlignment="Left" Margin="170,199,0,0" VerticalAlignment="Top"/>
+        <Label Content="Total Cost:" FontSize="25" HorizontalAlignment="Left" Margin="14,365,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.576,0.615"/>
+        <ListBox x:Name="output"  HorizontalAlignment="Left" Height="192" Margin="163,353,0,0" VerticalAlignment="Top" Width="316" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.537"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-1.002"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <TextBox x:Name="tb_Oranges" HorizontalAlignment="Left" Height="50" Margin="519,199,0,0" TextWrapping="Wrap" Text="" FontSize="30" VerticalAlignment="Top" Width="154" RenderTransformOrigin="0.268,0.457"/>
+        <TextBox x:Name="tb_Apple" HorizontalAlignment="Left" Height="46" Margin="519,110,0,0" TextWrapping="Wrap" Text="" FontSize="30" VerticalAlignment="Top" Width="154"/>
+        <TextBox x:Name="tb_banana" HorizontalAlignment="Left" Height="46" Margin="519,44,0,0" TextWrapping="Wrap" Text="" FontSize="30" VerticalAlignment="Top" Width="154"/>
+        <Button Content="Calculate price" x:Name="Calculate_price" FontSize="30" HorizontalAlignment="Left" Margin="498,327,0,0" VerticalAlignment="Top" Width="203" Height="52" Click="Calculate_price_Click"/>
+        <Button x:Name="save" Content="save" FontSize="30" HorizontalAlignment="Left" Margin="519,431,0,0" VerticalAlignment="Top" Width="182" Height="49" Click="save_Click"/>
+        <Button  x:Name="clear" Content="Clear" FontSize="30" HorizontalAlignment="Left" Margin="519,509,0,0" VerticalAlignment="Top" Width="182" Height="44" Click="clear_Click"/>
+
+
+    </Grid>
+</Window>
