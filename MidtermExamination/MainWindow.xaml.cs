@@ -45,7 +45,7 @@ namespace MidtermExamination
             { Delivery = 10; };
 
 
-            output.Items.Add("The quantity of apple is"+" "+" "+" "+tb_Apple.Text+" "+ ","+"The Price of apple $" + " " + Apple);
+            output.Items.Add("The quantity of apple iis"+" "+" "+" "+tb_Apple.Text+" "+ ","+"The Price of apple $" + " " + Apple);
            output.Items.Add("The quantity of Banana is" + " " + " "+ tb_banana.Text+" "+","+ "The price of banana $" + " " + Banana);
              output.Items.Add("The quantity of Orange is" + " " +" "+ tb_Oranges.Text+" "+","+ "The price of oranges $" + " " + " " + Oranges); 
             output.Items.Add(  "Your Delivery fee is $" + " " + Delivery);
